@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import FloatingHearts from './FloatingHearts';
 import SadEmoji from './SadEmoji';
 import LoveSurprise from './LoveSurprise';
-import birthdayImage from '@/assets/birthday-celebration.png';
+import lovePhoto1 from '@/assets/love-photo-1.jpg';
 
 interface Interface3Props {
   onComplete: () => void;
@@ -51,9 +51,9 @@ const Interface3: React.FC<Interface3Props> = ({ onComplete }) => {
           {/* Photo */}
           <div className="relative mx-auto w-48 h-48 rounded-full overflow-hidden border-4 border-primary shadow-xl mb-8 animate-glow-pulse">
             <img 
-              src={birthdayImage} 
-              alt="Birthday Celebration" 
-              className="w-full h-full object-cover"
+              src={lovePhoto1} 
+              alt="My Beautiful Wife" 
+              className="w-full h-full object-cover object-top"
             />
           </div>
 
@@ -95,8 +95,8 @@ const Interface3: React.FC<Interface3Props> = ({ onComplete }) => {
           <div className="text-center">
             <div className="relative mx-auto w-64 h-64 rounded-full overflow-hidden border-4 border-primary shadow-2xl mb-6">
               <img 
-                src={birthdayImage} 
-                alt="Birthday Celebration" 
+                src={lovePhoto1} 
+                alt="My Beautiful Wife"
                 className="w-full h-full object-cover"
               />
             </div>
