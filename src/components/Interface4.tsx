@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import FloatingHearts from './FloatingHearts';
 import KissAnimation from './KissAnimation';
-import birthdayImage from '@/assets/birthday-celebration.png';
+import lovePhotoTemple from '@/assets/love-photo-temple.jpg';
 
 interface Interface4Props {
   onComplete: () => void;
@@ -39,7 +39,7 @@ const Interface4: React.FC<Interface4Props> = ({ onComplete }) => {
           } ${stage >= 3 ? 'animate-glow-pulse' : ''}`}
         >
           <img 
-            src={birthdayImage} 
+            src={lovePhotoTemple}
             alt="Our Love" 
             className={`w-full h-full object-cover transition-transform duration-1000 ${
               stage >= 2 ? 'scale-110' : 'scale-100'

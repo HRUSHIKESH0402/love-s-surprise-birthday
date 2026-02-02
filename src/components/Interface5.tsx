@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import FloatingHearts from './FloatingHearts';
 import KissAnimation from './KissAnimation';
-import birthdayImage from '@/assets/birthday-celebration.png';
+import lovePhotoCouple from '@/assets/love-photo-couple.jpg';
 
 interface Interface5Props {
   onComplete: () => void;
@@ -58,8 +58,8 @@ const Interface5: React.FC<Interface5Props> = ({ onComplete }) => {
       {/* Photo */}
       <div className="relative mx-auto w-48 h-48 rounded-full overflow-hidden border-4 border-primary shadow-xl mb-8 animate-glow-pulse z-10">
         <img 
-          src={birthdayImage} 
-          alt="Birthday Celebration" 
+          src={lovePhotoCouple} 
+          alt="Our Love" 
           className="w-full h-full object-cover"
         />
       </div>

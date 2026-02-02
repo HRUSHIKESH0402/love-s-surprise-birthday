@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import FloatingHearts from './FloatingHearts';
 import KissAnimation from './KissAnimation';
-import birthdayImage from '@/assets/birthday-celebration.png';
+import lovePhotoMirror from '@/assets/love-photo-mirror.jpg';
 
 interface Interface7Props {
   onComplete: () => void;
@@ -35,8 +35,8 @@ const Interface7: React.FC<Interface7Props> = ({ onComplete }) => {
         {/* Photo with love animation */}
         <div className="relative mx-auto w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary shadow-2xl mb-8 animate-glow-pulse">
           <img 
-            src={birthdayImage} 
-            alt="My Love" 
+            src={lovePhotoMirror} 
+            alt="My Love"
             className="w-full h-full object-cover"
           />
           

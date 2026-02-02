@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import FloatingHearts from './FloatingHearts';
 import LoveSurprise from './LoveSurprise';
-import birthdayImage from '@/assets/birthday-celebration.png';
+import lovePhotoCouple from '@/assets/love-photo-couple.jpg';
 
 interface Interface6Props {
   onComplete: () => void;
@@ -60,10 +60,10 @@ const Interface6: React.FC<Interface6Props> = ({ onComplete }) => {
         ) : (
           <LoveSurprise trigger={showPhoto}>
             <div className="text-center">
-              {/* Photo */}
+            {/* Photo */}
               <div className="relative mx-auto w-64 h-64 rounded-full overflow-hidden border-4 border-primary shadow-2xl mb-6 animate-glow-pulse">
                 <img 
-                  src={birthdayImage} 
+                  src={lovePhotoCouple} 
                   alt="Hrushikesh" 
                   className="w-full h-full object-cover"
                 />

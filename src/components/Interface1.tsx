@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Balloon from './Balloon';
-import birthdayImage from '@/assets/birthday-celebration.png';
+import lovePhoto1 from '@/assets/love-photo-1.jpg';
 
 interface Interface1Props {
   onComplete: () => void;
@@ -68,9 +68,9 @@ const Interface1: React.FC<Interface1Props> = ({ onComplete }) => {
           {/* Photo frame */}
           <div className="relative mx-auto w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary shadow-2xl animate-glow-pulse">
             <img 
-              src={birthdayImage} 
-              alt="Birthday Celebration" 
-              className="w-full h-full object-cover"
+              src={lovePhoto1} 
+              alt="My Beautiful Wife" 
+              className="w-full h-full object-cover object-top"
             />
           </div>
 
