@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import FloatingHearts from './FloatingHearts';
 import KissAnimation from './KissAnimation';
 import lovePhotoCouple from '@/assets/love-photo-couple.jpg';
+import birthdaySong from '@/assets/birthday-song.mp3';
 
 interface Interface5Props {
   onComplete: () => void;
@@ -48,11 +49,11 @@ const Interface5: React.FC<Interface5Props> = ({ onComplete }) => {
       <FloatingHearts count={15} />
       <KissAnimation trigger={showKiss} />
 
-      {/* Background music - using a royalty-free romantic melody URL */}
+      {/* Birthday song */}
       <audio
         ref={audioRef}
         onEnded={handleSongEnd}
-        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        src={birthdaySong}
       />
 
       {/* Photo */}
